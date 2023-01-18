@@ -55,13 +55,13 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<div class="container">
+<main class="container" role="main">
   <div class="card">
-    <img src="images/image-qr-code.png">
+    <img src="images/image-qr-code.png" alt="qr-code">
     <h1>Improve your front-end skills by building projects</h1>
     <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
   </div>
-</div>
+</main>
 ```
 
 ```css
@@ -73,14 +73,14 @@ body {
   padding: 0;
   font-family: 'Outfit', sans-serif;
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr 14fr 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  min-height: 100vh;
+  /* grid-template-columns: 1fr 14fr 1fr;
+   grid-template-rows: 1fr 8fr 1fr;*/
 }
 .container{
   background: hsl(212, 45%, 89%);
-  grid-column-start: 2;
-  grid-row-start: 2;
+  /*  grid-column-start: 2;
+    grid-row-start: 2;*/
   display: grid;
   justify-content: center;
   align-items: center;
@@ -88,8 +88,8 @@ body {
 .card{
   display: flex;
   flex-direction: column;
-  background: #fff;
-  width: 320px;
+  background: hsl(0, 0%, 100%);
+  width: 300px;
   padding: 20px;
   border-radius: 15px;
 }
@@ -99,15 +99,18 @@ body {
 .card > h1:nth-child(2) {
   margin: 40px 20px 20px 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 700;
+  color: hsl(218, 44%, 22%);
 }
 .card > p:nth-child(3) {
   margin: 0 20px 20px 20px;
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
+  color: hsl(220, 15%, 55%);
 }
+
 
 ```
 ```js
@@ -128,8 +131,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [px/em/rem](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/) - This post is all about px/em/rem.
+
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
