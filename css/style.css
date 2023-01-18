@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     background: hsl(0, 0%, 100%);
-    width: 320px;
+    width: 300px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -32,7 +32,7 @@ body {
 .card > h1:nth-child(2) {
     margin: 40px 20px 20px 20px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: hsl(218, 44%, 22%);
 }
