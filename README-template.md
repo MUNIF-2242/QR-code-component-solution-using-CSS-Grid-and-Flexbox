@@ -33,8 +33,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/MUNIF-2242/QR-code-component-solution-using-CSS-Grid-and-Flexbox.git)
+- Live Site URL: [Live site URL](https://qr-code-solution-css-grid.netlify.app/)
 
 ## My process
 
@@ -45,9 +45,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -58,13 +55,60 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="container">
+  <div class="card">
+    <img src="images/image-qr-code.png">
+    <h1>Improve your front-end skills by building projects</h1>
+    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+  </div>
+</div>
 ```
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 14fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
 }
+.container{
+  background: hsl(212, 45%, 89%);
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.card > img:nth-child(1) {
+  border-radius: 15px;
+}
+.card > h1:nth-child(2) {
+  margin: 40px 20px 20px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+.card > p:nth-child(3) {
+  margin: 0 20px 20px 20px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 ```
 ```js
 const proudOfThisFunc = () => {
@@ -90,7 +134,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
-
+- MD MUNIF HASAN
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
